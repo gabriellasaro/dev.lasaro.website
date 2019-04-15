@@ -1,0 +1,106 @@
+/* COPYRIGHT 2018 Gabriel Lasaro, Todos os direitos reservados. */
+body{
+    font-family: 'Roboto Mono', 'Open Sans', sans-serif;
+    background:#fff;
+    margin:0px;
+    padding:0px;
+}
+/* HOME */
+.home{
+    position: relative;;
+    width:100%;
+    height:auto;
+    margin:auto;
+    padding: 15px 0px 3px 0px;
+    background:#303030;
+
+}
+.home #profile{
+    /* position: relative; */
+    display: flex;
+    width:140px;
+    margin: 15px auto;
+    border-radius:100%;
+    border: 3px solid #fff;
+}
+.home h1{
+    text-align: center;
+    margin: auto;
+    color:#303030;
+    background: #fff;
+}
+/* FIM: HOME */
+/* MENU */
+.menu-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'home home' 'github gitlib' 'right right';
+    padding: 20px;
+    /* background: #999; */
+}
+.menu-grid div{
+    background: #fff;
+    /* border:1px solid #000; */
+}
+.menu-grid div a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+    background:#303030;
+    border-radius: 4px;
+    transition-duration: 60ms;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.menu-grid div a:hover{
+    color:#fff;
+    background:#3689e6;
+}
+.menu-grid .i1{
+    grid-area:home;
+}
+.menu-grid .i2{
+    grid-area:github;
+}
+.menu-grid .i3{
+    grid-area:gitlib;
+}
+.menu-grid .i4{
+    grid-area:left;
+}
+.menu-grid .i5{
+    grid-area:right;
+}
+/* FIM: MENU */
+/* CONTENT */
+.content-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'coin' 'bottom';
+    padding: 20px;
+    /* background: #ff0; */
+}
+.content-grid div{
+    background: rgb(238, 235, 235);
+    border-radius:4px;
+}
+.content-grid .i1{
+    grid-area:coin;
+    margin-top:10px;
+    margin-bottom:10px;
+    /* height: 250px; */
+}
+.content-grid .i1{
+    text-align: center;
+}
+.content-grid .i2{
+    grid-area:bottom;
+}
+.content-grid .i2 p{
+    text-align: center;
+    font-size:13px;
+}
+/* FIM: CONTENT */
