@@ -11,23 +11,48 @@ body{
     width:100%;
     height:auto;
     margin:auto;
-    padding: 15px 0px 3px 0px;
-    background:#303030;
+    /* padding: 0px 0px 3px 0px; */
+    /* background:#3689e6; */
 
+}
+.home #title{
+    padding: 26px;
+    background: #303030;
+    color:#fff;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+.home #title a{
+    color:#fff;
+    text-decoration:none;
+}
+.home #title a:hover{
+    text-decoration: underline;
 }
 .home #profile{
     /* position: relative; */
     display: flex;
-    width:140px;
-    margin: 15px auto;
+    width:160px;
+    margin: 40px auto;
     border-radius:100%;
-    border: 3px solid #fff;
+    border: 1px solid #303030;
 }
 .home h1{
     text-align: center;
     margin: auto;
     color:#303030;
-    background: #fff;
+}
+.home h4{
+    text-align: center;
+    margin: auto;
+    color:#303030;
+    padding: 18px 0px 0px 0px;
+}
+.home h4 a{
+    color:#303030;
+}
+.home h4 a:hover{
+    text-decoration: underline;
 }
 /* FIM: HOME */
 /* MENU */
@@ -36,6 +61,7 @@ body{
     grid-gap: 20px;
     grid-template-areas: 'home home' 'github gitlib' 'right right';
     padding: 20px;
+    margin-top:20px;
     /* background: #999; */
 }
 .menu-grid div{
@@ -47,7 +73,7 @@ body{
     text-align: center;
     text-decoration: none;
     color:#fff;
-    padding: 10px;
+    padding: 16px;
     background:#303030;
     border-radius: 4px;
     transition-duration: 60ms;
@@ -79,28 +105,26 @@ body{
 .content-grid{
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: 'coin' 'bottom';
+    grid-template-areas: 'coin' 'copy';
     padding: 20px;
     /* background: #ff0; */
 }
 .content-grid div{
-    background: rgb(238, 235, 235);
+    /* background: rgb(238, 235, 235); */
     border-radius:4px;
 }
-.content-grid .i1{
+.content-grid .bitcoin{
     grid-area:coin;
     margin-top:10px;
     margin-bottom:10px;
-    /* height: 250px; */
-}
-.content-grid .i1{
     text-align: center;
 }
-.content-grid .i2{
-    grid-area:bottom;
+.content-grid .copy{
+    grid-area:copy;
 }
-.content-grid .i2 p{
+.content-grid .copy p{
     text-align: center;
-    font-size:13px;
+    font-size:14px;
+    padding:12px;
 }
 /* FIM: CONTENT */
