@@ -1,34 +1,4 @@
-/* COPYRIGHT 2018 Gabriel Lasaro, Todos os direitos reservados. */
-body{
-    font-family: 'Roboto Mono', 'Open Sans', sans-serif;
-    background:#fff;
-    margin:0px;
-    padding:0px;
-}
-/* HOME */
-.home{
-    position: relative;;
-    width:100%;
-    height:auto;
-    margin:auto;
-    /* padding: 0px 0px 3px 0px; */
-    /* background:#3689e6; */
-
-}
-.home #title{
-    padding: 26px;
-    background: #303030;
-    color:#fff;
-    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-
-}
-.home #title a{
-    color:#fff;
-    text-decoration:none;
-}
-.home #title a:hover{
-    text-decoration: underline;
-}
+/* COPYRIGHT 2018-2019 Gabriel Lasaro, Todos os direitos reservados. */
 .home #profile{
     /* position: relative; */
     display: flex;
