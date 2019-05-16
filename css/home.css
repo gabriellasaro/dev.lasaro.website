@@ -91,10 +91,11 @@
 }
 .content-grid .copy{
     grid-area:copy;
+    padding:4px;
 }
 .content-grid .copy p{
     text-align: center;
     font-size:14px;
-    padding:12px;
+    padding:4px;
 }
 /* FIM: CONTENT */
