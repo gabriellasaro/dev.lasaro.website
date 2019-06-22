@@ -1,6 +1,5 @@
-/* COPYRIGHT 2018-2019 Gabriel Lasaro, Todos os direitos reservados. */
+/* COPYRIGHT 2018-2019 Gabriel Lasaro */
 .home #profile{
-    /* position: relative; */
     display: flex;
     width:160px;
     margin: 40px auto;
@@ -34,7 +33,6 @@
     grid-template-areas: 'github github' 'arquea fastguer';
     padding: 20px;
     margin-top:25px;
-    /* background: #999; */
 }
 .menu-grid a{
     box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
@@ -61,7 +59,6 @@
     grid-area:fastguer;
 }
 /* FIM: MENU */
-
 /* CONTENT */
 hr{
     border: 0px;
@@ -89,7 +86,6 @@ hr{
     }
 }
 .content-grid div{
-    /* background: rgb(238, 235, 235); */
     border-radius:3px;
 }
 .content-grid div #more{
@@ -154,7 +150,6 @@ hr{
     grid-area:arquea;
     padding: 20px;
     background: rgb(238, 235, 235);
-    /* background: linear-gradient(rgba(63, 98, 214, 0.2),#fff) */
 }
 .content-grid .fastguer{
     grid-area:fastguer;
