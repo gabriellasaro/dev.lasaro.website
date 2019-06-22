@@ -45,11 +45,3 @@ body{
         margin-left:-500px;
     }
 }
-@media only screen and (min-width: 1050px) {
-    .content {
-        position: relative;
-        width:1000px;
-        left:50%;
-        margin-left:-500px;
-    }
-}

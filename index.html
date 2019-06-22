@@ -1,18 +1,23 @@
 <!--
-L           AAAAAAAAAAAA   SSSSSSSSSSS AAAAAAAAAAA RRRRRRRRRRRR OOOOOOOOOOOO
-L           A          A  SS           A         A R          R O          O
-L           A          A SS            A         A R          R O          O
-L           A          A  SS           A         A R          R O          O
-L           A          A   SSSS        A         A R          R O          O
-L           AAAAAAAAAAAA       SSSS    AAAAAAAAAAA RRRRRRRRRRRR O          O
-L           A          A           SS  A         A R  RR        O          O
-L           A          A            SS A         A R     RR     O          O
-L           A          A           SS  A         A R       RR   O          O
-LLLLLLLLLLL A          A SSSSSSSSSSS   A         A R         RR OOOOOOOOOOOO
-COPYRIGHT 2017-2019 Gabriel Lasaro, Todos os direitos reservados.
+L                A           SSSSSSSSSSSSSSSSAAAAAAAAAAARRRRRRRRRRRROOOOOOOOOO
+L               A A         SSS             A         AR          R O         O
+L              A   A      SSS              A         AR          R   O         O
+L             A     A      SSS            A         AR          R     O         O
+L            A       A       SSSSS       A         AR          R       O    O    O
+L           AAAAAAAAAAA          SSSSS  AAAAAAAAAAARRRRRRRRRRRR         O    O    O
+L          A           A             SSA         AR  RR                  O    O    O
+L         A             A             ASS       AR     RR                 O         O
+L        A               A           ASSSS     AR       RR                 O         O
+LLLLLLLLA                 ASSSSSSSSSASSSS     AR         RR                 OOOOOOOOOOO
 -->
 <!doctype html>
 <html><head>
+<meta charset="utf-8">
+<script>
+if (navigator.languages[0]!="pt-BR" && navigator.languages[0]!="pt"){
+    location.href="en/";
+}
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133446541-1"></script>
 <script>
@@ -22,7 +27,6 @@ COPYRIGHT 2017-2019 Gabriel Lasaro, Todos os direitos reservados.
 
   gtag('config', 'UA-133446541-1');
 </script>
-<meta charset="utf-8">
 <title>Gabriel Lasaro - lasaro.tech</title>
 <link rel="canonical" href="https://lasaro.tech/">
 <meta name="language" content="pt-BR">
@@ -49,27 +53,64 @@ COPYRIGHT 2017-2019 Gabriel Lasaro, Todos os direitos reservados.
     </div>
     <img src="img/gabriel2.jpg" alt="Gabriel Lasaro" id="profile"/>
     <h1>Gabriel Lasaro</h1>
-    <h4>🌐️ Colatina, Espírito Santo</h4>
-    <h4>📝️ <a href="mailto:gabriel@lasaro.tech">gabriel@lasaro.tech</a></h4>
+    <h4>📍️ Colatina, Brasil</h4>
+    <h4>💼️ <a href="mailto:gabriel@lasaro.tech">gabriel@lasaro.tech</a></h4>
 </div>
 <div class="content">
     <div class="menu-grid">
-        <div class="i1"><a href="https://github.com/gabriellasaro">GitHub</a></div>
-        <div class="i2"><a href="https://arqueadb.lasaro.tech">ArqueaDB</a></div>
-        <div class="i3"><a href="https://fastguer.com">Fastguer</a></div>
+        <a class="i0" href="https://github.com/gabriellasaro">GitHub</a>
+        <a  class="i1" href="https://arqueadb.lasaro.tech">ArqueaDB</a>
+        <a class="i2" href="https://fastguer.com">Fastguer</a>
     </div>
-    <div class="content-grid">
 
-        <div class="bitcoin">
-            <h3 class="bitcoin">Bitcoin</h3>
-            <h5 class="bitcoin">ÚLTIMO PREÇO: <span style='color:#3689e6;' id="a"></span><br>COMPRA: <span style='color:#3689e6;' id="b"></span><br>VENDA: <span style='color:#3689e6;' id="c"></span></h5>
+    <div class="content-grid">
+        <div class="tcoin">
+            <hr style="margin-top:30px;">
+            <h2>Principais cotações</h2>
         </div>
+        <div class="coin btc">
+            <h3 style="color:#ffa154;">Bitcoin</h3>
+            <p class="coin-price"><span id="master">R$42665.28</span>
+                <span id="other"><span style='color:#3689e6;' id="a" title="Alta">R$42665.28</span> ⬆️ | ⬇️ <span style='color:#3689e6;' id="b" title="Baixa">R$42665.28</span></span></p>
+        </div>
+
+        <div class="coin eth">
+                <h3 style="color:#a56de2;">Ethereum</h3>
+                <p class="coin-price"><span id="master">R$42665.28</span>
+                    <span id="other"><span style='color:#3689e6;' id="a" title="Alta">R$42665.28</span> ⬆️ | ⬇️ <span style='color:#3689e6;' id="b" title="Baixa">R$42665.28</span></span></p>
+        </div>
+        <div class="tproj">
+            <hr style="margin-top:60px;">
+            <h2>Projetos</h2>
+        </div>
+        <div class="arquea">
+            <h3>ArqueaDB</h3>
+            <p>O arquea é uma pequena  biblioteca feita puramente em python para
+                gerenciar de forma simples dados não relacionais.
+            </p>
+            <h4>Instalação:</h4>
+            <code>
+                pip install arquea
+            </code>
+            <a href="https://arqueadb.lasaro.tech/" id="more">Mais informações...</a>
+        </div>
+
+        <div class="fastguer">
+            <h3>Fastguer</h3>
+            <p>Já imaginou restaurantes, lanchonetes, entregadores, 
+                garçons e clientes famintos todos conectados?
+                    É o que faremos para matar sua fome!
+            </p>
+            <a href="https://fastguer.com" id="more">Saiba mais...</a>
+        </div>
+
         <div class="copy">
             <p>Construído por Gabriel Lasaro</p>
             <p>Este site está sobre a licença MIT. Acesse o repositório em: <a href="https://github.com/gabriellasaro/lasaro.tech" title="https://github.com/gabriellasaro/lasaro.tech">github/lasaro.tech</a></p>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="bitcoin.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="coins.js"></script>
 </div>
 </body></html>

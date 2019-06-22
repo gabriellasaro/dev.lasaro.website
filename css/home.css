@@ -29,73 +29,148 @@
 .menu-grid{
     display: grid;
     grid-gap: 20px;
-    grid-template-areas: 'home home' 'github gitlib' 'right right';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'github github' 'arquea fastguer';
     padding: 20px;
-    margin-top:20px;
+    margin-top:25px;
     /* background: #999; */
 }
-.menu-grid div{
-    background: #fff;
-    /* border:1px solid #000; */
-}
-.menu-grid div a{
+.menu-grid a{
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
     display: block;
     text-align: center;
     text-decoration: none;
     color:#fff;
     padding: 16px;
     background:#303030;
-    border-radius: 4px;
+    border-radius: 3px;
     transition-duration: 60ms;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
 }
-.menu-grid div a:hover{
+.menu-grid a:hover{
     color:#fff;
     background:#3689e6;
 }
-.menu-grid .i1{
-    grid-area:home;
-}
-.menu-grid .i2{
+.menu-grid .i0{
     grid-area:github;
 }
-.menu-grid .i3{
-    grid-area:gitlib;
+.menu-grid .i1{
+    grid-area:arquea;
 }
-.menu-grid .i4{
-    grid-area:left;
-}
-.menu-grid .i5{
-    grid-area:right;
+.menu-grid .i2{
+    grid-area:fastguer;
 }
 /* FIM: MENU */
+
 /* CONTENT */
-.content-grid{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 'coin' 'copy';
-    padding: 20px;
-    /* background: #ff0; */
+hr{
+    border: 0px;
+    background: #999;
+    margin-left:10px;
+    margin-right:10px;
+    height: 1px;
+    margin:4px;
+    padding: 0px;
+}
+@media only screen and (max-width: 560px) {
+    .content-grid{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 'tcoin' 'bitcoin' 'coin' 'tproj' 'arquea' 'fastguer' 'copy';
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 560px) {
+    .content-grid{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 'tcoin tcoin' 'bitcoin coin' 'tproj tproj' 'arquea fastguer' 'copy copy';
+        padding: 20px;
+    }
 }
 .content-grid div{
     /* background: rgb(238, 235, 235); */
-    border-radius:4px;
+    border-radius:3px;
 }
-.content-grid .bitcoin{
+.content-grid div #more{
+    display: block;
+    text-align: right;
+    margin-top:5px;
+    text-decoration: none;
+}
+.content-grid div #more:hover{
+    text-decoration: underline;
+}
+.content-grid div code{
+    display: block;
+    background: #303030;
+    color:#3689e6;
+    padding:18px;
+    margin:20px 0px 20px 0px;
+    border-radius: 3px;
+}
+.content-grid div h3{
+    text-align: left;
+    color:#303030;
+    font-weight:bold;
+    font-size: 24px;
+    margin: 0px 0px 10px 0px;
+}
+.content-grid div p{
+    text-align: left;
+    color:#303030;
+    margin: 20px 0px 20px 0px;
+}
+.content-grid .tcoin{
+    grid-area:tcoin;
+}
+.content-grid .tproj{
+    grid-area:tproj;
+}
+.content-grid .btc{
+    grid-area:bitcoin;
+    padding:20px;
+    background: #ffc27d;
+}
+.content-grid .eth{
     grid-area:coin;
-    margin-top:10px;
-    margin-bottom:10px;
-    text-align: center;
+    padding:20px;
+    background: #cd9ef7;
+}
+.content-grid .coin h3{
+    font-size:18px;
+    font-weight: 100;
+    color:#999;
+}
+.coin-price{
+    font-size:24px;
+    font-weight: bold;
+    margin:0px;
+}
+.coin-price #other {
+    font-size:14px;
+}
+.content-grid .arquea{
+    grid-area:arquea;
+    padding: 20px;
+    background: rgb(238, 235, 235);
+    /* background: linear-gradient(rgba(63, 98, 214, 0.2),#fff) */
+}
+.content-grid .fastguer{
+    grid-area:fastguer;
+    padding: 20px;
+    background: rgb(238, 235, 235);
 }
 .content-grid .copy{
     grid-area:copy;
     padding:4px;
+    margin:20px 0px 20px 0px;
 }
 .content-grid .copy p{
     text-align: center;
+    color:#303030;
     font-size:14px;
     padding:4px;
+    margin:0px;
 }
 /* FIM: CONTENT */
