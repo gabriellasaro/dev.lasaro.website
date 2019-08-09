@@ -2,7 +2,7 @@
 .home #profile{
     display: flex;
     width:160px;
-    margin: 40px auto;
+    margin: 100px auto 25px auto;
     border-radius:100%;
     border: 1px solid #303030;
 }
@@ -25,38 +25,49 @@
 }
 /* FIM: HOME */
 /* MENU */
-.menu-grid{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 'github github' 'arquea fastguer';
-    padding: 20px;
-    margin-top:25px;
+.menu{
+    padding:20px;
+    border-radius: 10px;
+    background:#303030;
+    box-shadow: 0px 0px 1px 0px rgba(32, 32, 32, 0.75);
 }
-.menu-grid a{
-    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    display: block;
+@media only screen and (max-width: 800px) {
+    .menu{
+        margin: 60px 20px 20px 20px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .menu{
+        margin: 60px auto 20px auto;
+    }
+}
+.menu div{
+    margin:0 auto;
+    text-align: center;
+}
+.menu a{
+    display: inline-flex;
     text-align: center;
     text-decoration: none;
     color:#fff;
-    padding: 16px;
-    background:#303030;
-    border-radius: 3px;
-    transition-duration: 60ms;
-}
-.menu-grid a:hover{
-    color:#fff;
+    padding: 15px 25px 15px 25px;
+    margin: 5px;
     background:#3689e6;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px 0px rgba(32, 32, 32, 0.75);
 }
-.menu-grid .i0{
-    grid-area:github;
+.menu a:hover{
+    background-position: right center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background-image: linear-gradient(to right, #3689e6 0%, #3b83d4 51%, #357cce 100%);
 }
-.menu-grid .i1{
-    grid-area:arquea;
-}
-.menu-grid .i2{
-    grid-area:fastguer;
+@media only screen and (max-width: 415px) {
+    .menu{
+        padding: 20px 5px 20px 5px;
+    }
+    .menu a{
+        padding: 10px 25px 10px 25px;
+    }
 }
 /* FIM: MENU */
 /* CONTENT */
@@ -159,7 +170,7 @@ hr{
 .content-grid .copy{
     grid-area:copy;
     padding:4px;
-    margin:20px 0px 20px 0px;
+    margin:60px 0px 20px 0px;
 }
 .content-grid .copy p{
     text-align: center;

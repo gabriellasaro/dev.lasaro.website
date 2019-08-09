@@ -10,23 +10,33 @@ body{
     width:100%;
     height:auto;
     margin:auto;
-    /* padding: 0px 0px 3px 0px; */
-    /* background:#3689e6; */
-
 }
 .home #title{
-    padding: 26px;
+    padding: 30px;
     background: #303030;
     color:#fff;
     box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-
 }
 .home #title a{
     color:#fff;
+    background:#3689e6;
+    padding:10px 20px 10px 20px;
+    border-radius: 2px;
     text-decoration:none;
+    box-shadow: 0px 0px 5px 0px rgba(32, 32, 32, 0.75);
 }
 .home #title a:hover{
-    text-decoration: underline;
+    background-position: right center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background-image: linear-gradient(to right, #3689e6 0%, #3b83d4 51%, #357cce 100%);
+}
+@media only screen and (max-width: 415px) {
+    .home #title{
+        padding:30px 5px 30px 20px;
+    }
+    .home #title a{
+        padding:6px 12px 6px 12px;
+    }
 }
 /* Content */
 @media only screen and (min-width: 800px) {
