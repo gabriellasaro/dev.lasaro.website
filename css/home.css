@@ -23,69 +23,14 @@
 .home h4 a:hover{
     text-decoration: underline;
 }
-/* FIM: HOME */
-/* MENU */
-.menu{
-    padding:20px;
-    border-radius: 10px;
-    background:#303030;
-    box-shadow: 0px 0px 1px 0px rgba(32, 32, 32, 0.75);
-}
-@media only screen and (max-width: 800px) {
-    .menu{
-        margin: 60px 20px 20px 20px;
-    }
-}
-@media only screen and (min-width: 800px) {
-    .menu{
-        margin: 60px auto 20px auto;
-    }
-}
-.menu div{
-    margin:0 auto;
-    text-align: center;
-}
-.menu a{
-    display: inline-flex;
-    text-align: center;
-    text-decoration: none;
-    color:#fff;
-    padding: 15px 25px 15px 25px;
-    margin: 5px;
-    background:#3689e6;
-    border-radius: 40px;
-    box-shadow: 0px 0px 5px 0px rgba(32, 32, 32, 0.75);
-}
-.menu a:hover{
-    background-position: right center;
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-    background-image: linear-gradient(to right, #3689e6 0%, #3b83d4 51%, #357cce 100%);
-}
-@media only screen and (max-width: 415px) {
-    .menu{
-        padding: 20px 5px 20px 5px;
-    }
-    .menu a{
-        padding: 10px 25px 10px 25px;
-    }
-}
-/* FIM: MENU */
 /* CONTENT */
-hr{
-    border: 0px;
-    background: #999;
-    margin-left:10px;
-    margin-right:10px;
-    height: 1px;
-    margin:4px;
-    padding: 0px;
-}
 @media only screen and (max-width: 560px) {
     .content-grid{
         display: grid;
         grid-gap: 20px;
         grid-template-areas: 'tcoin' 'bitcoin' 'coin' 'tproj' 'arquea' 'fastguer' 'copy';
         padding: 20px;
+        margin-top:30px;
     }
 }
 @media only screen and (min-width: 560px) {
@@ -94,6 +39,7 @@ hr{
         grid-gap: 20px;
         grid-template-areas: 'tcoin tcoin' 'bitcoin coin' 'tproj tproj' 'arquea fastguer' 'copy copy';
         padding: 20px;
+        margin-top:60px;
     }
 }
 .content-grid div{
@@ -101,6 +47,7 @@ hr{
 }
 .content-grid div #more{
     display: block;
+    color:#fff;
     text-align: right;
     margin-top:5px;
     text-decoration: none;
@@ -111,7 +58,7 @@ hr{
 .content-grid div code{
     display: block;
     background: #303030;
-    color:#3689e6;
+    color:#fff;
     padding:18px;
     margin:20px 0px 20px 0px;
     border-radius: 3px;
@@ -160,12 +107,12 @@ hr{
 .content-grid .arquea{
     grid-area:arquea;
     padding: 20px;
-    background: rgb(238, 235, 235);
+    background:#9bdb4d;
 }
 .content-grid .fastguer{
     grid-area:fastguer;
     padding: 20px;
-    background: rgb(238, 235, 235);
+    background:#ed5353;
 }
 .content-grid .copy{
     grid-area:copy;
