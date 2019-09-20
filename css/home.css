@@ -1,34 +1,21 @@
 /* COPYRIGHT 2018-2019 Gabriel Lasaro */
-.home #profile{
-    display: flex;
-    width:160px;
-    margin: 100px auto 25px auto;
-    border-radius:100%;
-    border: 1px solid #303030;
+.content-title{
+    margin-top:160px;
 }
-.home h1{
+.content-title h1{
     text-align: center;
-    margin: auto;
+    font-size:100px;
     color:#303030;
-}
-.home h4{
-    text-align: center;
-    margin: auto;
-    color:#303030;
-    padding: 18px 0px 0px 0px;
-}
-.home h4 a{
-    color:#303030;
-}
-.home h4 a:hover{
-    text-decoration: underline;
 }
 /* CONTENT */
 @media only screen and (max-width: 560px) {
+    .content-title h1{
+        font-size:46px;
+    }
     .content-grid{
         display: grid;
         grid-gap: 20px;
-        grid-template-areas: 'tcoin' 'bitcoin' 'coin' 'tproj' 'arquea' 'fastguer' 'copy';
+        grid-template-areas: 'tcoin' 'bitcoin' 'coin' 'tproj' 'arquea' 'fastguer' 'title-about' 'about-me' 'copy';
         padding: 20px;
         margin-top:30px;
     }
@@ -37,13 +24,16 @@
     .content-grid{
         display: grid;
         grid-gap: 20px;
-        grid-template-areas: 'tcoin tcoin' 'bitcoin coin' 'tproj tproj' 'arquea fastguer' 'copy copy';
+        grid-template-areas: 'tcoin tcoin' 'bitcoin coin' 'tproj tproj' 'arquea fastguer' 'title-about title-about' 'about-me about-me' 'copy copy';
         padding: 20px;
         margin-top:60px;
     }
 }
 .content-grid div{
     border-radius:3px;
+}
+.content-grid div .m40{
+    margin-top:40px;
 }
 .content-grid div #more{
     display: block;
@@ -67,8 +57,8 @@
     text-align: left;
     color:#303030;
     font-weight:bold;
-    font-size: 24px;
-    margin: 0px 0px 10px 0px;
+    font-size: 22px;
+    margin: 0px;
 }
 .content-grid div p{
     text-align: left;
@@ -91,10 +81,11 @@
     padding:20px;
     background: #cd9ef7;
 }
-.content-grid .coin h3{
+.content-grid .coin .coin-title{
+    margin:0px;
     font-size:18px;
     font-weight: 100;
-    color:#999;
+    color:#fff;
 }
 .coin-price{
     font-size:24px;
@@ -113,6 +104,54 @@
     grid-area:fastguer;
     padding: 20px;
     background:#ed5353;
+}
+.content-grid .title-about{
+    grid-area:title-about;
+}
+.content-grid .about-me{
+    grid-area:about-me;
+    /* padding: 3%; */
+    background:#8cd5ff;
+}
+.content-grid .about-me img{
+    float:left;
+    width:34%;
+    border-radius: 10px;
+    margin:2% 1% 2% 2%;
+    padding:0px;
+    /* background:#ff0fff; */
+}
+.content-grid .about-me div{
+    float:right;
+    width: 60%;
+    margin:2% 2% 2% 1%;
+    /* background:#ed5353; */
+}
+.content-grid .about-me p{
+    font-size: 18px;
+    color:#303030;
+    margin:2px 0px 5px 15px;
+}
+.content-grid .about-me a{
+    color:#303030;
+}
+.content-grid .about-me a:hover{
+    color:#fff;
+}
+.content-grid .about-me .title{
+    font-size:38px;
+    font-weight: bold;
+    margin: 15px 0px 13px 0px;
+}
+@media only screen and (max-width: 560px) {
+    .content-grid .about-me p{
+        font-size: 14px;
+        margin: 2px 0px 4px 10px;
+    }
+    .content-grid .about-me .title{
+        font-size: 26px;
+        margin: 8px 0px 10px 0px;
+    }
 }
 .content-grid .copy{
     grid-area:copy;

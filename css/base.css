@@ -6,6 +6,12 @@ body{
 }
 /* Menu */
 .top-menu{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    width:100%;
+    background: #fff;
     padding: 18px;
     border-top: 8px solid #303030;
     color:#fff;
