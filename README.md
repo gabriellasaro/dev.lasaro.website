@@ -1,2 +1,2 @@
-# lasaro.tech
+# lasaro.dev
 My website.
