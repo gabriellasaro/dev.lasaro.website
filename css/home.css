@@ -88,12 +88,12 @@
     color:#fff;
 }
 .coin-price{
-    font-size:24px;
+    font-size:28px;
     font-weight: bold;
     margin:0px;
 }
 .coin-price #other {
-    font-size:14px;
+    font-size:18px;
 }
 .content-grid .arquea{
     grid-area:arquea;
@@ -110,8 +110,7 @@
 }
 .content-grid .about-me{
     grid-area:about-me;
-    /* padding: 3%; */
-    background:#8cd5ff;
+    /* background:#8cd5ff; */
 }
 .content-grid .about-me img{
     float:left;
@@ -119,24 +118,23 @@
     border-radius: 10px;
     margin:2% 1% 2% 2%;
     padding:0px;
-    /* background:#ff0fff; */
 }
 .content-grid .about-me div{
     float:right;
     width: 60%;
     margin:2% 2% 2% 1%;
-    /* background:#ed5353; */
 }
 .content-grid .about-me p{
     font-size: 18px;
     color:#303030;
-    margin:2px 0px 5px 15px;
+    margin:3px 0px 5px 15px;
 }
 .content-grid .about-me a{
     color:#303030;
+    text-decoration: none;
 }
 .content-grid .about-me a:hover{
-    color:#fff;
+    text-decoration: underline;
 }
 .content-grid .about-me .title{
     font-size:38px;

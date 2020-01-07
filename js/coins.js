@@ -4,9 +4,15 @@ function get_coin(coin, symbol){
         type: 'get',
         dataType: 'json',
     }).done(function(data){
-        $('.coin.'+coin+' #master').text("R$"+data['Data']['AggregatedData']['PRICE'].toString().replace('.', ','))
-        $('.coin.'+coin+' #a').text("R$"+data['Data']['AggregatedData']['HIGHDAY'].toString().replace('.', ','))
-        $('.coin.'+coin+' #b').text("R$"+data['Data']['AggregatedData']['LOWDAY'].toString().replace('.', ','))
+        var percent = ((data['Data']['AggregatedData']['PRICE']*100)/data['Data']['AggregatedData']['OPEN24HOUR']-100).toFixed(2).toString();
+        if (percent>=0){
+            $('.coin.'+coin+' #master').text("⬆️ R$"+data['Data']['AggregatedData']['PRICE'].toString())
+            $('.coin.'+coin+' #a').text("+"+percent+"%")
+        }else{
+            $('.coin.'+coin+' #master').text("⬇️ R$"+data['Data']['AggregatedData']['PRICE'].toString())
+            $('.coin.'+coin+' #a').text(percent+"%")
+
+        }
     });
 }
 get_coin('btc', 'BRL');
