@@ -81,19 +81,20 @@
     padding:20px;
     background: #cd9ef7;
 }
-.content-grid .coin .coin-title{
+/* Coin style */
+.coin .title{
     margin:0px;
     font-size:18px;
     font-weight: 100;
     color:#fff;
 }
-.coin-price{
-    font-size:28px;
+.coin .price{
+    font-size:30px;
     font-weight: bold;
-    margin:0px;
+    margin:10px 0px 0px 0px;
 }
-.coin-price #other {
-    font-size:18px;
+.coin .txt {
+    font-size:16px;
 }
 .content-grid .arquea{
     grid-area:arquea;
