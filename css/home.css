@@ -1,21 +1,21 @@
-/* COPYRIGHT 2018-2019 Gabriel Lasaro */
+/* COPYRIGHT 2018-2020 Gabriel Lasaro */
 .content-title{
-    margin-top:160px;
+    margin-top:180px;
 }
 .content-title h1{
     text-align: center;
-    font-size:100px;
+    font-size:92px;
     color:#303030;
 }
 /* CONTENT */
 @media only screen and (max-width: 560px) {
     .content-title h1{
-        font-size:46px;
+        font-size:42px;
     }
     .content-grid{
         display: grid;
         grid-gap: 20px;
-        grid-template-areas: 'tcoin' 'bitcoin' 'coin' 'tproj' 'arquea' 'fastguer' 'title-about' 'about-me' 'copy';
+        grid-template-areas: 'tcoin' 'bitcoin' 'coin' 'mcoins' 'tproj' 'arquea' 'fastguer' 'title-about' 'about-me' 'copy';
         padding: 20px;
         margin-top:30px;
     }
@@ -24,7 +24,7 @@
     .content-grid{
         display: grid;
         grid-gap: 20px;
-        grid-template-areas: 'tcoin tcoin' 'bitcoin coin' 'tproj tproj' 'arquea fastguer' 'title-about title-about' 'about-me about-me' 'copy copy';
+        grid-template-areas: 'tcoin tcoin' 'bitcoin coin' 'mcoins mcoins' 'tproj tproj' 'arquea fastguer' 'title-about title-about' 'about-me about-me' 'copy copy';
         padding: 20px;
         margin-top:60px;
     }
@@ -80,6 +80,22 @@
     grid-area:coin;
     padding:20px;
     background: #cd9ef7;
+}
+.content-grid .more-coins{
+    grid-area:mcoins;
+    padding:16px;
+    background: #75caa7;
+}
+.content-grid .more-coins a{
+    display: block;
+    text-align:center;
+    text-decoration: none;
+    color:#fff;
+    margin:0px;
+    padding:0px;
+}
+.content-grid .more-coins a:hover{
+    text-decoration:underline;
 }
 /* Coin style */
 .coin .title{
