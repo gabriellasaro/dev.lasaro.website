@@ -11,101 +11,86 @@ L        A               A           ASSSS     AR       RR                 O    
 LLLLLLLLA                 ASSSSSSSSSASSSS     AR         RR                 OOOOOOOOOOO
 -->
 <!doctype html>
-<html><head>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133446541-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133446541-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-133446541-1');
-</script>
-<title>Gabriel Lasaro</title>
-<link rel="canonical" href="https://lasaro.dev/">
-<meta name="language" content="pt-BR">
-<meta property="og:title" content="Gabriel Lasaro">
-<meta property="og:type" content="website">
-<meta property="og:image" itemprop="image" content="img/gabriel.png">
-<meta property="og:site_name" content="Gabriel Lasaro">
-<meta property="og:description" content="Acesso rápido a maioria dos meus projetos.">
-<meta property="og:locale" content="pt-BR">
-<meta name="Robots" content="INDEX,FOLLOW">
-<meta name="DISTRIBUTION" content="GLOBAL">
-<meta name="COPYRIGHT" content="Copyright (c) Gabriel Lasaro">
-<meta name="RATING" content="GENERAL">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/home.css">
-<meta name="theme-color" content="#3689e6">
-<meta name="viewport" content="width=device-width">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-</head><body>
-<div class="top-menu">
-    <a href="https://lasaro.dev" id="lp">Home</a>
-    <a href="https://coins.lasaro.dev" id="lp">Coins</a>
-    <a href="https://arqueadb.lasaro.dev">ArqueaDB</a>
-</div>
-<div class="content-title">
-    <h1>Lasaro, Gabriel</h1>
-</div>
-<div class="content">
-    <div class="content-grid">
-        <div class="tcoin">
-            <h3>Principais cotações</h3>
-        </div>
-        <div class="coin btc">
-            <p class="title" style="color:#ffa154;">Bitcoin</p>
-            <p class="price">...</p>
-        </div>
-        <div class="coin eth">
-                <p class="title" style="color:#a56de2;">Ethereum</p>
-                <p class="price">...</p>
-        </div>
-        <div class="coin more-coins">
-            <a href="https://coins.lasaro.dev">Ver outras...</a>
-        </div>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-        <div class="tproj">
-            <h3 class="m40">Projetos</h3>
-        </div>
-        <div class="arquea">
-            <h3>ArqueaDB</h3>
-            <p>O arquea é uma pequena  biblioteca feita puramente em python para
-                gerenciar de forma simples dados não relacionais.
-            </p>
-            <h4>Instalação:</h4>
-            <code>
-                pip install arquea
-            </code>
-            <a href="https://arqueadb.lasaro.dev/" id="more">Saiba mais...</a>
-        </div>
+        gtag('js', new Date());
 
-        <div class="fastguer">
-            <h3>Fastguer</h3>
-            <p>Já imaginou restaurantes, lanchonetes, entregadores, 
-                garçons e clientes famintos todos conectados?
-                    É o que faremos para matar sua fome!
-            </p>
-            <a href="https://fastguer.com" id="more">Saiba mais...</a>
-        </div>
-
-        <div class="title-about">
-            <h3 class="m40">Sobre mim</h3>
-        </div>
-        <div class="about-me">
-            <img src="img/gabriel2.jpg" alt="Gabriel Lasaro"/>
-            <div>
-                <p class="title">Gabriel Lasaro</p>
-                <p>📍️ Colatina, Brasil</p>
-                <p>🔗️ <a href="https://github.com/gabriellasaro">github.com/gabriellasaro</a></p>
-            </div>
-        </div>
-
-        <div class="copy">
-            <p>Este site está sobre a licença MIT.<br>Acesse o repositório em: <a href="https://github.com/gabriellasaro/dev.lasaro.website" title="https://github.com/gabriellasaro/dev.lasaro.website">gabriellasaro/dev.lasaro.website</a></p>
-        </div>
+        gtag('config', 'UA-133446541-1');
+    </script>
+    <title>Gabriel Lasaro</title>
+    <link rel="canonical" href="https://lasaro.dev/">
+    <meta name="language" content="pt-BR">
+    <meta property="og:title" content="Gabriel Lasaro">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image" content="img/gabriel.png">
+    <meta property="og:site_name" content="Gabriel Lasaro">
+    <meta property="og:description" content="Acesso rápido a maioria dos meus projetos.">
+    <meta property="og:locale" content="pt-BR">
+    <meta name="Robots" content="INDEX,FOLLOW">
+    <meta name="DISTRIBUTION" content="GLOBAL">
+    <meta name="COPYRIGHT" content="Copyright (c) Gabriel Lasaro">
+    <meta name="RATING" content="GENERAL">
+    <meta name="theme-color" content="#3689e6">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body{
+            background:#fff;
+            color: #303030;
+            margin:0px;
+            padding:0px;
+        }
+        .d-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            width: 100vw;
+            height: 100vh;
+        }
+        .about-me img {
+            width: 160px;
+            border-radius: 100%;
+            box-shadow: 0px 0px 1px 1px #8cd5ff;
+        }
+        a {
+            color: #303030;
+        }
+        .link {
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .copy {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="d-flex content">
+    <div class="d-flex about-me">
+        <img src="img/gabriel.jpg" alt="Gabriel Lasaro"/>
+        <h2>Gabriel Lasaro</h2>
+        <span>-</span>
+        <p style="margin-bottom: 25px;"><a class="link" href="https://github.com/gabriellasaro">github.com/gabriellasaro</a></p>
     </div>
-    <script src="js/coins.js"></script>
+
+    <div class="copy">
+        <p>Este <a href="https://github.com/gabriellasaro/dev.lasaro.website"
+                title="https://github.com/gabriellasaro/dev.lasaro.website">site</a> está sobre a licença MIT.</p>
+    </div>
 </div>
-</body></html>
+</body>
+</html>
